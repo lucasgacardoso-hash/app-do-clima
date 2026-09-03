@@ -1,0 +1,114 @@
+body { /*Estamos dizendo que queremos modificar o body inteiro*/
+
+    margin: 0;
+    /*O navegador coloca uma margem padrão, aqui estamos removendo ela*/
+
+    height: 100vh;
+    /*Faz o body ter a altura de 100% da área visível do navegador*/
+
+    display: flex;
+    /*Ativamos o flex para conseguir organizar melhor o conteúdo dentro do body*/
+
+    justify-content: center;
+    /*Centraliza nosso conteúdo horizontalmente*/
+
+    align-items: center;
+    /*Centraliza nosso conteúdo verticalmente*/
+
+    background-color: lightgray;
+    /*Define a cor do fundo da página*/
+
+    font-family: Arial;
+    /*Muda nossa fonte para Arial*/
+}
+
+
+
+.caixa { /*Estamos modificando nosso espaço principal chamado caixa*/
+
+    background-color: white;
+    /*Fundo da nossa caixa vai ser branco*/
+
+    width: 320px;
+    /*Largura da nossa caixa*/
+
+    padding: 30px;
+    /*Espaço interno da nossa caixa*/
+
+    border: 1px solid gray;
+    /*1px = grossura da borda
+    solid = linha reta
+    gray = cor da borda*/
+
+    border-radius: 10px;
+    /*Arredonda os cantos da nossa caixa*/
+
+    text-align: center;
+    /*Centraliza os textos que estão dentro da caixa*/
+}
+
+
+
+label {
+
+    display: block;
+    /*Faz nosso label ocupar uma linha própria*/
+
+    margin-bottom: 8px;
+    /*Coloca um espaço abaixo dele*/
+}
+
+
+
+input {
+
+    width: 200px;
+    /*Largura da nossa caixa de digitação*/
+
+    padding: 10px;
+    /*Espaço interno do input*/
+
+    border: 1px solid gray;
+    /*Cria a borda do input*/
+
+    margin-bottom: 10px;
+    /*Cria um espaço abaixo do input*/
+}
+
+
+
+button {
+
+    padding: 10px;
+    /*Aumenta o espaço interno do botão*/
+
+    cursor: pointer;
+    /*Faz o mouse virar uma mãozinha quando estiver em cima do botão*/
+}
+
+
+
+#resultado {
+
+    margin-top: 20px;
+    /*Cria um espaço acima da área onde vai aparecer nosso resultado*/
+}
+
+
+
+.card-clima {
+
+    border-top: 1px solid lightgray;
+    /*Cria uma linha em cima dos resultados*/
+
+    padding-top: 15px;
+    /*Cria um espaço entre essa linha e o resultado*/
+}
+
+
+
+.erro {
+
+    font-weight: bold;
+    /*Deixa a mensagem de erro em negrito*/
+}

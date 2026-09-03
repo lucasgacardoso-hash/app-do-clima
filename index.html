@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!--Aqui informa que este arquivo está usando HTML-->
+
+<html lang="pt-BR"> <!--Aqui diz que o idioma principal da nossa página é português do Brasil-->
+
+
+<head> <!--Aqui ficam configurações do nosso site-->
+
+    <meta charset="UTF-8"> <!--Permite usar caracteres como ç, ã, é e outros-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Faz nosso site se adaptar melhor para diferentes tamanhos de tela-->
+
+    <title>Consulta do Clima</title> <!--Título que aparece na aba do navegador-->
+
+    <link rel="stylesheet" href="style.css">
+    <!--Aqui estamos chamando nosso arquivo CSS para estilizar essa página-->
+
+</head>
+
+
+<body> <!--Aqui fica tudo aquilo que vai aparecer na nossa página-->
+
+
+    <main class="caixa">
+    <!--Criamos nosso espaço principal chamado caixa, onde vamos colocar nosso conteúdo-->
+
+
+        <h1>Consulta do Clima</h1>
+        <!--Nosso título principal da página-->
+
+
+        <label for="cidade">Digite uma cidade:</label>
+        <!--Texto que explica para o usuário oque ele deve digitar-->
+
+
+        <input
+            type="text"
+            id="cidade"
+            placeholder="Ex.: Lages"
+        >
+        <!--input cria nosso espaço de digitação
+        type text diz que ele recebe texto
+        id cidade vai servir para o JavaScript encontrar esse input
+        placeholder mostra um exemplo dentro da caixa-->
+
+
+        <button id="buscar">
+            Buscar clima
+        </button>
+        <!--Criamos nosso botão e demos pra ele o id buscar
+        depois o JavaScript vai encontrar esse botão por esse id-->
+
+
+        <section id="resultado">
+            <!--Esse espaço começa praticamente vazio
+            e depois o JavaScript vai colocar os resultados do clima aqui-->
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <!--Aqui chamamos nosso JavaScript
+    colocamos ele no final para o HTML acima já existir quando o JS começar-->
+
+</body>
+
+
+</html>
