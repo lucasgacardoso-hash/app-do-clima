@@ -112,3 +112,39 @@ button {
     font-weight: bold;
     /*Deixa a mensagem de erro em negrito*/
 }
+/* Estilo base: pensado para telas pequenas */
+.container {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+input, button {
+    width: 100%;
+}
+
+/* A partir de 600px de largura, aproveita mais espaço */
+@media (min-width: 600px) {
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 28%;
+    }
+}
+input, button {
+    min-height: 44px;
+    font-size: 16px;
+    padding: 10px 14px;
+}
+
+button {
+    margin-top: 8px;
+}
