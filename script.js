@@ -1,4 +1,23 @@
-// ============================================
+// ================================================
+// REGISTRO DO SERVICE WORKER
+// ================================================
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("sw.js")
+      .then(() => {
+        console.log("Service Worker registrado com sucesso.");
+      })
+      .catch((erro) => {
+        console.error("Erro ao registrar o Service Worker:", erro);
+      });
+  });
+}
+
+
+
+
 // CONFIGURAÇÃO DA NOSSA API
 // ============================================
 
