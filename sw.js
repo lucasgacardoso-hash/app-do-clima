@@ -1,12 +1,12 @@
-const CACHE_NAME = "clima-app-v1";
+const CACHE_NAME = "clima-app-v2";
 
 const ARQUIVOS_PARA_CACHE = [
   "index.html",
   "style.css",
   "script.js",
   "manifest.json",
-  "icons/icon-192.png",
-  "icons/icon-512.png"
+  "icons/192x192_rel.png",
+  "icons/512x512.png"
 ];
 
 // Guarda os arquivos no cache assim que o Service Worker é instalado
